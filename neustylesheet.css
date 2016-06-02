@@ -65,7 +65,10 @@ img {
 
 a{
   text-decoration: none;
+
+
 }
+
 
 footer {
   text-align: center;
@@ -121,13 +124,9 @@ nav ul li a
   a:active{color:#2D2990;}
   a:link{color:#000;}
   a:visited{color:#00A6FF;}
-  a:hover{color:#f00;}                                  /*breiterer abstand, andere schriftfarbe*/
-  color:#454040;
-  font-size:2.125em;
-  line-height:2.5em;
-  padding:0.563em 0.938em 0.375em 0.938em;
-  transition:background 0.2s;
-  -webkit-transition:background 0.2s;
+  a:hover{
+    color:#f00;}                                  /*breiterer abstand, andere schriftfarbe*/
+  
 }
 
 nav ul li a:hover {                   /* hier wird die untere rote Line erzeugt*/
