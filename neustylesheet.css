@@ -27,7 +27,7 @@ color:black;
 p{                          /*Haupt text (Inhalt)*/
 font-family: Helvetica;
   line-height: 150%;
-  margin: 2.5em;
+  margin: 2.5em;            /*Rahmen für Haupttext*/
   width: 1000px;             /* Ab hier Blocksatz in mehreren spalten*/
   column-width: 200px;
   column-count: 3;
@@ -47,7 +47,7 @@ ul {
 
 li {                      /*Mehr Abstand oben*/
   list-style:square;
-  font-family:Verdana;
+  /*font-family:Verdana;*/
   font-weight:100;
   color:#2F2D2C;
   /*margin:2.5em;*/
@@ -112,6 +112,7 @@ nav{                           /*Überschrift */
   display:block;
   height:2.5em;
   text-align:center;
+  padding-right: 2.5em;       /*Unterkategorie mittig darstellen*/
 }
 
 nav ul {
@@ -132,11 +133,6 @@ nav ul li a
   
 }
 
-nav ul li a:hover {                   
-  /*backgorund:#DBD9D8;*/
-  border-bottom: 0.188em solid #E7590B;
-
-}
 
 /*Mobile style */
 @media screen and (min-width:800px) {
