@@ -22,16 +22,24 @@ h1{                        /* Überschrift center und schwarz*/
 }
 h2{
 color:black;
+padding-left: 4.6em;
 }
 
 p{                          /*Haupt text (Inhalt)*/
 font-family: Helvetica;
   line-height: 150%;
   margin: 2.5em;            /*Rahmen für Haupttext*/
+  padding-left: 7em;
   width: 1000px;             /* Ab hier Blocksatz in mehreren spalten*/
-  column-width: 200px;
+  column-width: 200px;      /*Abstände für Textabstände*/
   column-count: 3;
   column-gap: 30px;
+}
+h4{
+padding-left: 10em;
+padding-top: 0em;
+
+
 }
 
 /*{
@@ -49,12 +57,13 @@ li {                      /*Mehr Abstand oben*/
   list-style:square;
   /*font-family:Verdana;*/
   font-weight:100;
-  color:#2F2D2C;
+  /*color:#2F2D2C;*/      /*Hintergrundfarbe des Nav textes*/
   /*margin:2.5em;*/
   padding:0.5em;          /*Abstand zwischen den Menüpunkten*/
   line-height:1.25em;
   text-align:justify;
   /*margin:0.313em 0em 0.313em 03em;*/
+
 }
 
 img {
@@ -65,9 +74,6 @@ img {
 
 a{
   text-decoration: none;        /*Nav ohne unterlinie*/
-
-
-
 
 
 }
@@ -124,12 +130,11 @@ nav ul li {                       /* Nav in einer Reihe darstellen, statt untere
   margin: 0em 0.188em 0em 0.188em;
 }
 
-nav ul li a
+nav ul li a{
   a:active{color:#2D2990;}
   a:link{color:#000;}
   a:visited{color:#00A6FF;}
-  a:hover{
-    color:#f00;}                                  /*breiterer abstand, andere schriftfarbe*/
+  a:hover{color:#f00;}                                  /*breiterer abstand, andere schriftfarbe*/
   
 }
 
