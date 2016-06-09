@@ -77,6 +77,34 @@ a{
 
 
 }
+                                /*Code für Button*/
+.button {
+    background-color: #EDEDED; /* Green */
+    border: 1px solid green;
+    margin-top: 1em;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    float: center;
+    width: 190px;
+
+}
+
+.button:hover {
+
+background-color: #FFF;
+
+}
+
+img{
+font-size: 5px;
+
+}
+
 
 
 footer {
