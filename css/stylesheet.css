@@ -1,0 +1,129 @@
+/*Gernal style*/
+body {
+  background:#DCDCDC;
+  font-size:100%;
+  margin:0em;
+  padding:0em;
+}
+
+ul {
+  margin:0px;
+  padding:0px;
+}
+
+li {
+  list-style:square;
+  font-family:Verdana;
+  font-weight:100;
+  color:#2F2D2C;
+  margin:0em;
+  padding:0em;
+  line-height:1.25em;
+  text-align:justify;
+  margin:0.313em 0em 0.313em 03em; 
+}
+
+img {
+  width:90%;
+  height:auto;
+  max-width:100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*On Top Bar*/
+#menubar {
+  display:block;
+  background:#FFFFFF;
+}
+
+#menubar ul {
+  display:block;
+  width:2em;
+  padding:0.9em;
+}
+
+#menubar ul li {
+  display:inline;
+}
+
+#menubar ul li a.menubutton{
+  display:none;
+}
+
+/*header*/
+
+header {
+  display:block;
+  background:#2F2C2C;
+  text-align:center;
+}
+
+/*Navigation*/
+
+nav{
+  display:block;
+  height:2.5em;
+  background:#FFFFFF;
+  text-align:center;
+}
+
+nav ul {
+  display:block;
+}
+
+nav ul li {
+  display:inline;
+  margin: 0em 0.188em 0em 0.188em;
+}
+
+nav ul li a {
+  color:#454040;
+  font-size:1.125em;
+  line-height:2.5em;
+  padding:0.563em 0.938em 0.375em 0.938em;
+  transition:background 0.2s;
+  -webkit-transition:background 0.2s;
+}
+
+nav ul li a:hover {
+  backgorund:#DBD9D8;
+  border-bottom: 0.188em solid #E7590B;
+}
+
+/*Mobile style */
+@media screen and (min-width:800px) {
+  nav.nav {
+    display:block !important;
+  }
+}
+
+@media screen and (max-width:800px) {
+   #menubar ul li a.menubutton {
+    display:block;
+   }
+   nav {
+    display:none;
+    height:auto;
+   }
+   nav ul li {
+    display:block;
+    margin:0.3em 0em 0.3em 0em;
+   }
+}
+
+@media screen and (max-width:800px) {
+  body {
+    font-size:90%;
+  }
+
+}
+
+@media screen and (max-width:550px) {
+  body {
+    font-size:86%;
+  }
+}
+
