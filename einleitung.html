@@ -3,77 +3,55 @@
 <head>
 <title>P4_Dokumentation</title>
 <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
-<link rel="stylesheet" href="popup.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width ,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-
-
 </head>
   <body>
+
     <section id="menubar">
       <ul>
-      <li><a class="menubutton" href="#menu"><img src="menu.png"></a></li>
+      <li><a class="menubutton" href="#menu"><img src="pictures/menu.png"></a></li>
       </ul>
     </section>
-    <header>
-      <h1>MediCare</h1>
-    </header>
     <nav class="nav">
       <ul>
-        <li><a href="Einleitung" class="a">Einleitung</a></li>
+        <li><h1 class="a">MediTech</h1></li>
+        <li><a href="einleitung.html" class="a">Einleitung</a></li>
         <li><a href="recherche.html" class="a">Recherche</a></li>
-        <li><a href="konzeption.html" class="a">Konzeption</a></li>
+        <li><a href="konzeption.html" class="a">Idee & Konzeption</a></li>
         <li><a href="prototyp.html" class="a">Prototyp</a></li>
         <li><a href="management.html" class="a">Management</a></li>
         <li><a href="Quellen.html" class="a">Quellen</a></li>
       </ul>
     </nav>
     <section id="main">
-    <ul>
-      <li><button class="my_popup_open">ManagementSummary</button></li>
-      <li><button class="my_popup_open">UnserTeam</button></li>
-      <li><button class="my_popup_open">Aufgabe</button></li>
-      <li><button class="my_popup_open">Name+Logo</button></li>
-      <li><button class="my_popup_open">Projektmantra</button></li>
-    </ul>
+      <button class="btn">Summary</button>
+      <button class="btn">Unser Team</button>
+      <button class="btn">Aufgabe</button>
+      <button class="btn">Name + Logo</button>
+      <button class="btn">Projektmantra</button>
     </section>
-     <div id="contentSummary">
+    <div id="contentSummary">
       <p>In Deutschland erkranken pro Jahr etwa 1.200 Menschen an dieser Krankheit.
-Übersetzt bedeutet der Begriff Leukämie „weißes Blut". 
-Bei den Patienten kommt es zu einer unkontrollierten Vermehrung von speziellen weißen Blutkörperchen, den so genannten Granulozyten, im Knochenmark.
-Bei dieser Diagnose liegen oft um 500.000 weiße Blutkörperchen in einem µl Blut.
-Bei gesunden Menschen sind es bloß 4.000–9.000 weiße Blutkörperchen pro µl.
-(Mikroliter = µl)
+      Übersetzt bedeutet der Begriff Leukämie „weißes Blut". 
+      Bei den Patienten kommt es zu einer unkontrollierten Vermehrung von speziellen weißen Blutkörperchen, den so genannten Granulozyten, im Knochenmark.
+      Bei dieser Diagnose liegen oft um 500.000 weiße Blutkörperchen in einem µl Blut.
+      Bei gesunden Menschen sind es bloß 4.000–9.000 weiße Blutkörperchen pro µl.
+      (Mikroliter = µl)
 
-Eine chronische myeloische Leukämie entsteht in den meisten Fällen aufgrund einer Veränderung im Erbgut einer blutbildenden Stammzelle. Die Folge dieser Mutation ist das krankhaft veränderte Philadelphia-Chromosom. 
-Mit diesem Chromosom, ist der Körper in der Lage ein Eiweiß zu bilden, das normalerweise im menschlichen Organismus nicht vorkommt. Dieses sorgt für die unkontrollierte Vermehrung der weißen Blutkörperchen und es entsteht eine CML.
-Leukämie kann jederzeit während des Lebens auftreten, die meisten betroffenen sind im Alter von 40 bis 60 Jahren.
+      Eine chronische myeloische Leukämie entsteht in den meisten Fällen aufgrund einer Veränderung im Erbgut einer blutbildenden Stammzelle. Die Folge dieser Mutation ist das krankhaft veränderte Philadelphia-Chromosom. 
+      Mit diesem Chromosom, ist der Körper in der Lage ein Eiweiß zu bilden, das normalerweise im menschlichen Organismus nicht vorkommt. Dieses sorgt für die unkontrollierte Vermehrung der weißen Blutkörperchen und es entsteht eine CML.
+      Leukämie kann jederzeit während des Lebens auftreten, die meisten betroffenen sind im Alter von 40 bis 60 Jahren.
 
-CML wird in drei Stadien unterschieden. Bleibt die Erkrankung unbehandelt, schreitet sie fort und führt letztlich zum Tod. CML ist nicht heilbar, doch durch die regelmäßige Einnahme von Hemmstoffen (z.B Imatinib) kann man die Krankheit am fortschreiten hindern.
-</p>
+      CML wird in drei Stadien unterschieden. Bleibt die Erkrankung unbehandelt, schreitet sie fort und führt letztlich zum Tod. CML ist nicht heilbar, doch durch die regelmäßige Einnahme von Hemmstoffen (z.B Imatinib) kann man die Krankheit am fortschreiten hindern.
+      </p>
       <button class="my_popup_close">Close</button>
     </div>
-    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
-     <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
-    <script>
-    $(document).ready(function() {
-      $('#contentSummary').popup();
-      $('#contentSummary').popup({
-        background:true
-      });
-      $('.my_popup_open').click(function(){
-         $('#contentSummary').popup('show');
 
-
-      }); 
-        $('.my_popup_close').click(function(){
-           $('#contentSummary').popup('hide');
-         });
-       
-    });
-  </script>
-
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <script language="javascript" type="text/javascript" src="script/script.js"></script>
     <footer>
-     
     </footer>
   </body>
 </html>
