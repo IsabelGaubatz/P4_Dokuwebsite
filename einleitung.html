@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="content-type" content="text/html; charset=utf-8">  <!--Damit Sonderzeichen dargestellt werden-->
+<head>
 <title>P4_Dokumentation</title>
-<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="popup.css" type="text/css" />
 <meta name="viewport" content="width=device-width ,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-   $(document).ready(function() {
-    $('.menubutton').click(function() {
-       $('nav').slideToggle('slow');
-    });
-   });
-   </script>
+<script src="popup.js"></script>
 </head>
   <body>
     <section id="menubar">
@@ -20,36 +15,38 @@
       </ul>
     </section>
     <header>
-      <h1>Klinische Studien</h1>
+      <h1>MediCare</h1>
     </header>
     <nav class="nav">
       <ul>
-        <li><a href="einleitung.html" onclick=this.style.color="red" class="a">Einleitung</a></li>      
+        <li><p><input id="modal-open-button" type="button" value="Management Summary"/>
         <li><a href="recherche.html" class="a">Recherche</a></li>
         <li><a href="konzeption.html" class="a">Konzeption</a></li>
         <li><a href="prototyp.html" class="a">Prototyp</a></li>
         <li><a href="management.html" class="a">Management</a></li>
         <li><a href="Quellen.html" class="a">Quellen</a></li>
-
       </ul>
     </nav>
     <section id="main">
-    <h2>Einleitung</h2>
-    <br>
-    <h1 style="color:black; font-family:arial; font-size: 12pt";>In unserem Produkt geht es darum, Feedback von Testpersonen an Ärzte zu vermitteln, die wiederum die ausgewerteten Daten an ein Pharmakonzern weiterleiten. Die Informationen die gesammelt werden, handelt hauptsächlich von Schluckbeschwerden während der Tabletteneinnahme und wird mittels spezieller Software und einer Kamera analysiert.</h1>
+    <ul>
+      <li><a href="managementsummary.html" class="a">Management Summary</a></li>
+      <li><a href="unserteam.html" class="a">Unser Team</a></li>
+      <li><a href="aufgabe.html" class="a">Aufgabe</a></li>
+      <li><a href="namelogo" class="a">Name + Logo</a></li>
+      <li><a href="projektmantra" class="a">Projektmantra</a></li>
+    </ul>
     </section>
+    <div id="popup-Content-Managementsummary">
+    <h2>Management Summary</h2>
+      <div>
+      Example of a popup overlay. 
+      </div>
+    </div>
+    <div>
+    <input id="modal-close-button" types="button" value="X"/>
     <footer>
-      <br>
       <ul>
-        <li>Management Summary</li>
-        <br>
-        <li>Unser Team</li>
-        <br>
-        <li>Aufgabe</li>
-        <br>
-        <li>Name + Logo</li>
-        <br>
-        <li>Projektmantra</li>
+        <li></li>
       </ul>
     </footer>
   </body>
